@@ -151,7 +151,7 @@ img + p {
 	margin: 10px 0;
 }
 
-aside p:last-child {
+aside div:last-child {
 	font-style: italic;
 	letter-spacing: 1px;
 }
@@ -162,18 +162,88 @@ aside p:last-child {
 
 /*-------------------- Media Queries -------------------*/
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
+/* Tablets (landscape) ----------- */
+@media (max-width: 1024px) {
+	section {
+		float: none;
+		width: 100%;
+	}
+
+	aside {
+		float: none;	
+		width: 100%;
+		text-align: left;
+	}
+
+	.asideImages {
+		float: left;
+	}
+
+	div.asideImages:nth-child(n+1) {
+		margin-right: 2em;
+	}
+}
+
+/* Tablets (portrait) ----------- */
+@media (max-width: 820px) {
+	section {
+		float: none;
+		width: 100%;
+	}
+
+	aside {
+		float: none;	
+		width: 100%;
+		text-align: left;
+	}
+
+	.asideImages {
+		float: left;
+	}
+
+	div.asideImages:nth-child(n+1) {
+		margin-right: .6em;
+	}
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-/* Styles */
+@media (max-width: 767px) {
+	h1 {
+		float: none;
+		font-size: 2.5em;
+	}
+
+	nav {
+		float: none;
+		margin-top: 20px;
+	}
+
+	nav li {
+    	margin: 0 .9em 20px 0;	
+	}
+
+	section {
+		float: none;
+		width: 100%;
+	}
+
+	aside {
+		float: none;	
+		width: 100%;
+		text-align: left;
+	}
+
+	.asideImages {
+		float: left;
+	}
+
+	div.asideImages:nth-child(odd) {
+		margin-right: 3em;
+	}
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+@media (max-width: 320px) {
 	h1 {
 		float: none;
 		font-size: 2.5em;

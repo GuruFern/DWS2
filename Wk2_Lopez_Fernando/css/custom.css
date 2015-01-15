@@ -1,1 +1,12 @@
 /* Custom stylesheet */
+
+body {
+	background-color: #3C8B1B;
+}
+
+.container {
+	background-color: #fff;
+	width: 90%;
+	margin-top: 1.5em;
+	padding-top: 1em;
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Yunque</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8 col-sm-push-4">
+			<header>
+				<img src="img/el.yunque.burst.jpg" class="img-responsive">
+			</header>
+		</div>
+
+		<div class="col-sm-4 col-sm-pull-8">
+			<nav>
+				<ul class="nav nav-pills nav-stacked">
+					<li role="presentation"><a href="index.html">Home</a></li>
+					<li role="presentation"><a href="history.html">History of El Yunque</a></li>
+					<li role="presentation" class="active"><a href="gallery.html">Photo Gallery</a></li>
+					<li role="presentation"><a href="map.html">Map</a></li>
+					<li role="presentation"><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<blockquote class=""><em>"According to Legend, the good spirit 'Yuquiyu' reigned on his mighty mountain-top throne, protecting the Taino people."</em></blockquote>
+		</div>
+	</div>
+
+	<div class="row gallery">
+		<div class="col-xs-8 col-xs-push-2 col-sm-8 col-sm-push-4">
+			<div id="links">
+				<a href="img/gallery.1.jpg" title="Entrance" data-gallery>
+					<img src="img/thumbnails/gallery.1.thumbnail.jpg" alt="Entrance">
+				</a>
+
+				<a href="img/gallery.2.jpg" title="Cave" data-gallery>
+					<img src="img/thumbnails/gallery.2.thumbnail.jpg" alt="Cave">
+				</a>
+
+				<a href="img/gallery.3.jpg" title="Stream" data-gallery>
+					<img src="img/thumbnails/gallery.3.thumbnail.jpg" alt="Stream">
+				</a>
+
+				<a href="img/gallery.4.jpg" title="Waterfall" data-gallery>
+					<img src="img/thumbnails/gallery.4.thumbnail.jpg" alt="Waterfall">
+				</a>
+			</div>
+
+			<div id="blueimp-gallery" class="blueimp-gallery">
+			    <!-- The container for the modal slides -->
+			    <div class="slides"></div>
+
+			    <!-- Controls for the borderless lightbox -->
+			    <h3 class="title"></h3>
+			    <a class="prev">‹</a>
+			    <a class="next">›</a>
+			    <a class="close">×</a>
+			    <a class="play-pause"></a>
+			    <ol class="indicator"></ol>
+			    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+			    <div class="modal fade">
+			        <div class="modal-dialog">
+			            <div class="modal-content">
+			                <div class="modal-header">
+			                    <button type="button" class="close" aria-hidden="true">&times;</button>
+			                    <h4 class="modal-title"></h4>
+			                </div>
+			                <div class="modal-body next"></div>
+			                <div class="modal-footer">
+			                    <button type="button" class="btn btn-default pull-left prev">
+			                        <i class="glyphicon glyphicon-chevron-left"></i>
+			                        Previous
+			                    </button>
+			                    <button type="button" class="btn btn-primary next">
+			                        Next
+			                        <i class="glyphicon glyphicon-chevron-right"></i>
+			                    </button>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+<!-- javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+	<script src="js/bootstrap-image-gallery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -10,9 +10,87 @@ body {
 	width: 90%;
 	max-width: 960px;
 	margin: 0 auto;
-	background-color: #fff;
+}
+
+header {
+	height: 75px;
 	margin-top: 20px;
+}
+
+h1 {
+	margin: 0;
+}
+
+#formWrapper {
+	background-color: #fff;
 	padding: 20px;
+	margin-top: 40px;
+}
+
+.logo {
+	position: relative;	
+}
+
+.block1 {
+	width: 75px;
+	height: 40px;
+	background-color: orange;
+	position: absolute;
+	z-index: 3;
+	-webkit-transform: scaleX(1.5);
+	transform: scaleX(1.5);
+	-webkit-transition-property: width; /* Safari */
+    -webkit-transition-duration: 3s; /* Safari */
+	-webkit-transition-delay: 1s; /* Safari */
+    transition-delay: 1s;
+    transition-property: width;
+    transition-duration: 3s;
+	
+}
+
+div.block1:hover {
+	width: 200px;
+}
+
+.block2 {
+	width: 50px;
+	height: 40px;
+	background-color: #43CF27;
+	position: absolute;
+	left: 47px;
+	top: 15px;
+	z-index: 4;
+	transform: skewY(10deg);
+}
+
+.block3 {
+	width: 75px;
+	height: 40px;
+	background-color: #006CFF;
+	position: absolute;
+	left: 10px;
+	top: 25px;
+	-webkit-transform: rotateZ(90deg);
+	transform: rotateZ(90deg);
+	-webkit-transition-property: width; /* Safari */
+    -webkit-transition-duration: 3s; /* Safari */
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+    transition-property: width;
+    transition-duration: 3s;
+}
+
+div.block3:hover {
+	width: 200px;
+}
+
+.logo h1 {
+	position: absolute;
+	z-index: 6;
+	left: 55px;
+	top: 16px;
+	font-family: Impact, Charcoal, sans-serif;
+	color: #343434;
 }
 
 /*----------- Input Reset -----------*/

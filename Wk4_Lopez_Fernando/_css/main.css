@@ -1,9 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display+SC|Open+Sans);
+
 /*----------- General Styles -----------*/
 body {
 	background: url("../_img/wood.background.jpg") no-repeat center center;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #wrapper {
@@ -14,8 +17,23 @@ body {
 	padding: 2em;
 }
 
-h1 {
+h1, h2 {
 	margin: 0;
+	font-family: 'Playfair Display SC', serif;
+	text-transform: uppercase;
+}
+
+.logoContainer {
+	width: 300px;
+	height: 100px;
+	background: url(../_img/logo.background.jpg) no-repeat;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	position: absolute;
+	-webkit-transform: rotateZ(-15deg);
+	transform: rotateZ(-15deg);
+	margin: 21px 0 0 -15px;
 }
 
 nav ul {
@@ -27,8 +45,9 @@ nav li {
 	float: left;
 	width: 190px;
 	height: 50px;
-	border: 1px solid #000;
+	border: 1px solid #bbb;
 	list-style-type: none;
+	font-family: 'Playfair Display SC', serif;
 }
 
 nav li a {
@@ -40,70 +59,21 @@ nav li a {
 	height: 50px;
 	line-height: 50px;
 }
-/*----------- Header Logo Styles -----------*/
-.logo {
-	position: relative;	
+
+article {
+	width: 550px;
+	margin: 30px 0;
+	float: left;
 }
 
-.block1 {
-	width: 7.8125%;
-	height: 40px;
-	background-color: orange;
-	position: absolute;
-	z-index: 3;
-	-webkit-transform: scaleX(1.5);
-	transform: scaleX(1.5);
-	-webkit-transition-property: width; /* Safari */
-    -webkit-transition-duration: 3s; /* Safari */
-	-webkit-transition-delay: 1s; /* Safari */
-    transition-delay: 1s;
-    transition-property: width;
-    transition-duration: 3s;
+article h1, article h2 {
+	margin-bottom: 20px;
 }
 
-div.block1:hover {
-	width: 20.833333333333%;
-}
-
-.block2 {
-	width: 5.208333333333%;
-	height: 40px;
-	background-color: #43CF27;
-	position: absolute;
-	left: 47px;
-	top: 15px;
-	z-index: 4;
-	transform: skewY(10deg);
-}
-
-.block3 {
-	width: 7.8125%;
-	height: 40px;
-	background-color: #006CFF;
-	position: absolute;
-	left: 10px;
-	top: 25px;
-	-webkit-transform: rotateZ(90deg);
-	transform: rotateZ(90deg);
-	-webkit-transition-property: width; /* Safari */
-    -webkit-transition-duration: 3s; /* Safari */
-	-webkit-transition-timing-function: ease;
-	transition-timing-function: ease;
-    transition-property: width;
-    transition-duration: 3s;
-}
-
-div.block3:hover {
-	width: 20.833333333333%;
-}
-
-.logo h1 {
-	position: absolute;
-	z-index: 6;
-	left: 55px;
-	top: 16px;
-	font-family: Impact, Charcoal, sans-serif;
-	color: #343434;
+aside {
+	float: right;
+	width: 375px;
+	margin-top: 30px;
 }
 
 /*----------- Input Reset -----------*/
@@ -123,13 +93,14 @@ input[type=text],input[type=password],input[type=submit],textarea,button {
 }
 
 /*----------- Form Styles -----------*/
-.applicationForm {
-	width: 70%;
+form {
+	margin-top: 10px;
 }
 
 fieldset {
 	border: none;
-	margin-bottom: 20px;
+	margin: 0;
+	padding: 0;
 }
 
 legend {
@@ -141,15 +112,18 @@ label {
 	display: block;
 	width: 33.482142857143%;
 	float: left;
-	margin: 7px 0;
-	clear: left
+	margin: 11px 0;
+	clear: left;
+	color: #000;
 }
 
 input[type=text],input[type=password],textarea {
+	float: right;
 	border: 1px solid #bbb;
 	background: #FFF;
-	width: 44.642857142857%;
-	height: 15px;
+	width: 225px;
+	height: 18px;
+	margin-top: 5px;
 }
 
 input[type=text]:focus, textarea:focus {
@@ -165,44 +139,24 @@ input[type=radio], input[type=checkbox] {
 	margin-top: 8px;	
 }
 
-.employer1 {
-	margin-bottom: 40px;
-}
-
-input[type=file] {
-	margin-top: 5px;
-}
-
 textarea {
-	width: 100%;
-	height: 200px;
+	width: 360px;
+	height: 175px;
 }
 
 input[type=submit] {
-	width: 33.482142857143%;
+	width: 175px;
 	height: 50px;
-	background: #7abcff; /* Old browsers */
-	background: -moz-linear-gradient(top,  #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), 		color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+	font-family: 'Playfair Display SC', serif;
 	font-size: 1.3em;
-	color: #fff;
+	border: 1px solid #bbb;
 	float: right;
+	text-transform: uppercase;
+	color: #000;
 }
 
 input[type=submit]:hover {
-	background: #ffa84c; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffa84c 0%, #ff7b0d 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa84c), color-stop(100%,#ff7b0d)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #ffa84c 0%,#ff7b0d 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+	
 }
 
 .clear {
